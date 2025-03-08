@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corujão Flix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            overflow: auto;
+        }
+
+        .blur-overlay{ 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+        }
+
+        .img-fluid {
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        .text-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="bg-dark text-white py-1" style="min-height: 50px;">
+        <div class="d-flex align-items-center ms-3" style="height: 100%;">
+            <img src="images/logotipo.png" alt="Corujão Flix" width="200">
+            
+            <nav class="d-flex justify-content-center align-items-center" style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                <a href="../paginaInicial.html" class="text-white mx-3">Página Inicial</a>
+                <a href="../filmes.html" class="text-white mx-3">Filmes</a> 
+                <a href="../trailers.html" class="text-white mx-3">Trailers</a> 
+                <a href="../trilhaSonora.html" class="text-white mx-3">Trilha Sonora</a> 
+                <a href="../contato.html" class="text-white mx-3">Contato</a> 
+                <a href="../sobre.html" class="text-white mx-3">Sobre</a> 
+                <a href="../sair.html" class="btn btn-danger mx-3">Sair</a>
+            </nav>                
+        </div>
+    </header>
+<br>
+    <div class="blur-overlay"></div>
+
+    <div class="container mt-5">
+        <div class="row align-items-center justify-content-center">
+
+            <div class="col-md-6 text-center">
+                <img src="O Grande gatsby/7.png" class="img-fluid rounded shadow-lg" alt="O Grande Gatsby">
+            </div>
+        
+            <div class="col-md-6 text-column text-white">
+                <h1>O Grande Gatsby</h1>
+                <p><strong>Gênero:</strong>Drama, Romance</p>
+                <p><strong>Direção:</strong>Baz Luhrmann</p>
+                <p><strong>Duração:</strong> 143 minutos</p>
+                <p><strong>Lançamento:</strong> 2013</p>
+                <br>
+                <h2>Sinopse</h2>
+                <p>
+                    Baseado no clássico romance de F. Scott Fitzgerald, "O Grande Gatsby"
+                    conta a história de Nick Carraway (Tobey Maguire), um jovem escritor que 
+                    se muda para Long Island durante os anos 1920. Ele se torna vizinho de Jay Gatsby 
+                    (Leonardo DiCaprio), um milionário misterioso e carismático, conhecido por suas extravagantes
+                    festas. À medida que Nick se aproxima de Gatsby, ele descobre um amor não correspondido por Daisy Buchanan 
+                    (Carey Mulligan), uma mulher casada e o grande sonho de Gatsby. O filme explora temas como amor, obsessão, 
+                    riqueza e os excessos da sociedade americana da década de 1920, tudo ambientado em uma visualmente impressionante 
+                    recriação do glamour e da decadência da época.
+                </p>
+            </div>
+            
+            <div class="col-md-6 text-center">
+                <a href="../filmes.html" class="btn btn-danger mt-5">Voltar</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

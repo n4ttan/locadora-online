@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corujão Flix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: url('images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            overflow: auto;
+        }
+
+        .blur-overlay { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            z-index: -1;
+        }
+
+        .carousel-img {
+            width: 100%; 
+            height: 450px; 
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .carousel-item .col {
+            transition: all 0.5s ease;
+        }
+
+        .carousel-item .col:not(:first-child) {
+            filter: brightness(50%);
+            transform: scale(0.9);
+        }
+
+        #carouselFilmes {
+            max-width: 1000px;
+            margin: 80px auto;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 10;
+            padding: 5px 0;
+        }
+
+        header img {
+            width: 180px;
+            margin-left: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ff6347 !important;
+        }
+
+        nav a.active {
+            color: #ff6347 !important;
+        }
+
+        .content {
+            margin-top: 120px;
+            z-index: 1;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="d-flex align-items-center ms-3" style="height: 100%;">
+            <img src="images/logotipo.png" alt="Corujão Flix" width="200">
+            
+            <nav class="d-flex justify-content-center align-items-center" style="font-family: 'Roboto', sans-serif; font-weight: 500;">
+                <a href="paginaInicial.html" class="text-white mx-3">Página Inicial</a>
+                <a href="filmes.html" class="text-white mx-3">Filmes</a> 
+                <a href="trailers.html" class="text-white mx-3">Trailers</a> 
+                <a href="trilhaSonora.html" class="text-white mx-3">Trilha Sonora</a> 
+                <a href="contato.html" class="text-white mx-3">Contato</a> 
+                <a href="sobre.html" class="text-white mx-3">Sobre</a> 
+                <a href="sair.html" class="btn btn-danger mx-3">Sair</a>
+            </nav>                
+        </div>
+    </header>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="blur-overlay"></div>
+
+    <div id="carouselFilmes" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-anabelle.html">
+                            <img src="Filmes/Anabelle 3/1.png" class="carousel-img" alt="Filme 1">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-caes-de-guerra.html">
+                            <img src="Filmes/Cães de Guerra/2.png" class="carousel-img" alt="Filme 2">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-clube-da-luta.html">
+                            <img src="Filmes/Clube da Luta/3.png" class="carousel-img" alt="Filme 3">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-interestelar.html">
+                            <img src="Filmes/Interestelar/4.png" class="carousel-img" alt="Filme 4">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-john-wick.html">
+                            <img src="Filmes/John Wick 4/5.png" class="carousel-img" alt="Filme 5">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-lobo-de-wall-street.html">
+                            <img src="Filmes/Lobo de Wall Street/6.png" class="carousel-img" alt="Filme 6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-gatsby.html">
+                            <img src="Filmes/O Grande Gatsby/7.png" class="carousel-img" alt="Filme 7">
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-jogo-da-imitacao.html">
+                            <img src="Filmes/O Jogo da Imitação/8.png" class="carousel-img" alt="Filme 8">
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-robo-selvagem.html">
+                            <img src="Filmes/Robô Selvagem/9.png" class="carousel-img" alt="Filme 9">
+                        </a>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a href="Filmes/trailer-telefone-preto.html">
+                            <img src="Filmes/Telefone Preto/10.png" class="carousel-img" alt="Filme 10">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFilmes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFilmes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
